@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding-top: 3rem;
+}
+
+#grid{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    border: 2px solid black;
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square.selected{
+    background-color: red;
+}
