@@ -14,11 +14,12 @@ for(let i = 1; i <= 100; i++){
 
     current.classList.add('d-none');
 
-    console.log(i);
+    current.innerHTML = `<div class="square-number">${i}</div>`;
     
     current.addEventListener('click',
         function(){
-            this.classList.toggle('selected');            
+            this.classList.toggle('selected');  
+            console.log(i);          
         }
 
     );
