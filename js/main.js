@@ -13,12 +13,11 @@ for(let i = 1; i <= 100; i++){
     const current = createSquare();
 
     current.classList.add('d-none');
-
-    current.innerHTML = `<div class="square-number">${i}</div>`;
     
     current.addEventListener('click',
         function(){
             this.classList.toggle('selected');  
+            current.innerHTML = `<div class="square-number">${i}</div>`;
             console.log(i);          
         }
 
@@ -30,6 +29,7 @@ for(let i = 1; i <= 100; i++){
         current.classList.remove('d-none');
         title.classList.add('d-none');
         current.classList.remove('selected');  
+        current.innerHTML = ``;
     }
 
 )
