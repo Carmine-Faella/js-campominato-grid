@@ -29,6 +29,7 @@ for(let i = 1; i <= 100; i++){
     function(){
         current.classList.remove('d-none');
         title.classList.add('d-none');
+        current.classList.remove('selected');  
     }
 
 )
@@ -36,8 +37,6 @@ for(let i = 1; i <= 100; i++){
     gridDom.append(current);
 
 }
-
-
 
 
 //Creiamo la funzione della creazione della griglia
