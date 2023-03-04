@@ -21,7 +21,7 @@ footer{
 }
 
 #grid{
-    height: 500px;
+    height: 100%;
     width: 500px;
     margin: auto;
     display: flex;
@@ -30,16 +30,34 @@ footer{
 
 .square{
     border: 2px solid black;
-    width: calc(500px / 10);
-    height: calc(500px / 10);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.square.selected{
-    background-color: red;
+.square-middle{
+    border: 2px solid black;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.square-hard{
+    border: 2px solid black;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square.selected, .square-middle.selected, .square-hard.selected{
+    background-color: red;
+} 
 
 img{
     height: 50px;
@@ -59,7 +77,7 @@ h2{
     padding-top: 5rem; 
 }
 
-button{
+button, select{
     margin-right: 3rem;
     padding: 1rem 2rem;
 }
