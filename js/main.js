@@ -15,6 +15,8 @@ levelDifficult.addEventListener('change', function() {
 
     gridDom.innerHTML='';
 
+    title.classList.remove('d-none');
+
     if(this.value == 'easy'){for(let i = 1 ; i <= 100; i++){
 
         const current = createSquare();
